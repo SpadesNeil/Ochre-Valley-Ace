@@ -432,6 +432,8 @@
 			to_chat(user, span_warning("There's already a [R.name] inside of [src]."))
 			return
 		user.stop_sound_channel(gunchannel)
+	else
+		..()
 
 
 /obj/item/gun/ballistic/arquebus_pistol/process_fire(atom/target, mob/living/user, message = TRUE, params = null, zone_override = "", bonus_spread = 0)
