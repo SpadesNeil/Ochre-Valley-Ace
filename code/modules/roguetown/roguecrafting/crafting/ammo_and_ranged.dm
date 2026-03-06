@@ -345,7 +345,7 @@
 	craftdiff = 1 //you should make some ammo first!
 	
 /datum/crafting_recipe/roguetown/survival/slingpouchcraft
-	name = "sling bullet pouch"
+	name = "bullet pouch" // Ochre Valley edit, it works for all bullets.
 	category = "Ranged"
 	result = /obj/item/quiver/sling/
 	reqs = list(
@@ -367,7 +367,7 @@
 	verbage_simple = "smooth"
 	verbage = "smooths"
 	craftdiff = 0
-	
+
 /datum/crafting_recipe/roguetown/survival/stonebullets10x
 	name = "sling bullets - stone (x10)"
 	category = "Ranged"
