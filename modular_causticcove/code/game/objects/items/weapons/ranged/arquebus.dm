@@ -1,10 +1,10 @@
-
 /obj/item/gun/ballistic/arquebus
 	name = "arquebus rifle"
 	desc = "A gunpowder weapon that shoots an armor piercing metal ball."
 	icon = 'modular_causticcove/icons/weapons/arquebus.dmi'
 	icon_state = "arquebus"
 	item_state = "arquebus"
+	dropshrink = 0.6
 	force = 10
 	force_wielded = 15
 	possible_item_intents = list(/datum/intent/mace/strike/wood)
@@ -18,13 +18,13 @@
 	bigboy = TRUE
 	gripsprite = TRUE
 	wlength = WLENGTH_LONG
-	slot_flags = null
+	slot_flags = ITEM_SLOT_BACK // It can be inferred that this has a sling.
 	w_class = WEIGHT_CLASS_BULKY
 	randomspread = 1
 	spread = 0
-	equip_delay_self = 1.5 SECONDS
-	unequip_delay_self = 1.5 SECONDS
-	inv_storage_delay = 1.5 SECONDS
+	equip_delay_self = 2 SECONDS // Same as sheathe time for a greatweapon strap.
+	unequip_delay_self = 2 SECONDS
+	inv_storage_delay = 2 SECONDS
 	can_parry = TRUE
 	minstr = 6
 	walking_stick = TRUE
@@ -277,6 +277,7 @@
 	icon = 'icons/roguetown/weapons/32.dmi'
 	icon_state = "pistol"
 	item_state = "pistol"
+	dropshrink = 0.6
 	force = 10
 	possible_item_intents = list(/datum/intent/shoot/arquebus_pistol, /datum/intent/arc/arquebus_pistol, /datum/intent/mace/strike/wood)
 	internal_magazine = TRUE
@@ -286,9 +287,9 @@
 	randomspread = 1
 	spread = 0
 	can_parry = TRUE
-	equip_delay_self = 1.5
-	unequip_delay_self = 1.5
-	inv_storage_delay = 1 SECONDS	
+	equip_delay_self = 1.5 SECONDS
+	unequip_delay_self = 1.5 SECONDS
+	inv_storage_delay = 2 SECONDS // Either use a bandolier holster or deal with the slowdown.
 	minstr = 6
 	walking_stick = FALSE
 	cartridge_wording = "musketball"
@@ -372,7 +373,7 @@
 	gunchannel = SSsounds.random_available_channel()
 
 	if(istype(A, /obj/item/ammo_box) || istype(A, /obj/item/ammo_casing))
-		/*if(A in user.held_items) // Todo: Unfuck this before merging. -Ace
+		/*if(A in user.held_items) // Todo: Unfuck this later. -Ace
 			to_chat(user, "<span class='warning'>You need to be holding [A] to reload it.")
 			return*/
 		if(chambered)
