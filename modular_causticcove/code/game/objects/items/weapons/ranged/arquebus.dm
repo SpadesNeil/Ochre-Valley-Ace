@@ -176,7 +176,6 @@
 		playsound(src, "modular_causticcove/sound/arquebus/insert.ogg",  100)
 		user.visible_message("<span class='notice'>[user] forces [A] down the barrel of [src].</span>")
 		..()
-
 	if(istype(A, /obj/item/powderflask))
 		if(gunpowder)
 			user.visible_message("<span class='warning'>[src] is already filled with gunpowder!</span>")
@@ -217,6 +216,8 @@
 			to_chat(user, span_warning("There's already a [R.name] inside of [src]."))
 			return
 		user.stop_sound_channel(gunchannel)
+	else
+		..()
 
 /obj/item/gun/ballistic/arquebus/process_fire(atom/target, mob/living/user, message = TRUE, params = null, zone_override = "", bonus_spread = 0)
 
