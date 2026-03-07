@@ -18,13 +18,13 @@
 	bigboy = TRUE
 	gripsprite = TRUE
 	wlength = WLENGTH_LONG
-	slot_flags = ITEM_SLOT_BACK // It can be inferred that this has a sling.
+	slot_flags = null
 	w_class = WEIGHT_CLASS_BULKY
 	randomspread = 1
 	spread = 0
-	equip_delay_self = 2 SECONDS // Same as sheathe time for a greatweapon strap.
-	unequip_delay_self = 2 SECONDS
-	inv_storage_delay = 2 SECONDS
+	equip_delay_self = 1.5
+	unequip_delay_self = 1.5
+	inv_storage_delay = 1.5 SECONDS
 	can_parry = TRUE
 	minstr = 6
 	walking_stick = TRUE
@@ -290,7 +290,7 @@
 	can_parry = TRUE
 	equip_delay_self = 1.5 SECONDS
 	unequip_delay_self = 1.5 SECONDS
-	inv_storage_delay = 2 SECONDS // Either use a bandolier holster or deal with the slowdown.
+	inv_storage_delay = 2 SECONDS // OV Edit, either use a bandolier holster or deal with the slowdown.
 	minstr = 6
 	walking_stick = FALSE
 	cartridge_wording = "musketball"
