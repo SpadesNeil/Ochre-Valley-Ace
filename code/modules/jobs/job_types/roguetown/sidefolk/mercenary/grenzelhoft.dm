@@ -342,7 +342,7 @@
 		ADD_TRAIT(H, TRAIT_ARCYNE_T2, TRAIT_GENERIC) // Only T2 arcyne (Unless they're old) so if they get spell points from something they can only pick from the curated spellblade list
 	H.merctype = 7
 
-/datum/advclass/mercenary/grenzelhoft/arquebusier 
+/datum/advclass/mercenary/grenzelhoft/arquebusier
 	name = "Armbrustschutze Garten"
 	tutorial = "You are a former veteran arbalest, outfitted with the latest technologies known to man. Your weapons remain as deadly to the enemy as to you, but your training should overcome it. Run them down, with fire and sword."
 	outfit = /datum/outfit/job/roguetown/mercenary/grenzelhoft_arquebusier
@@ -396,7 +396,7 @@
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/grenzelpants
 	shoes = /obj/item/clothing/shoes/roguetown/grenzelhoft
 	gloves = /obj/item/clothing/gloves/roguetown/angle/grenzelgloves
-	//backl = /obj/item/rogueweapon/scabbard/gwstrap // Ochre Valley edit - removal until fixed, or maybe forever
+	//backl = /obj/item/rogueweapon/scabbard/gwstrap // OV Edit, removal until fixed, or maybe forever
 	backr = /obj/item/storage/backpack/rogue/satchel/black
 	backpack_contents = list(
 		/obj/item/roguekey/mercenary = 1,
