@@ -22,8 +22,8 @@
 	w_class = WEIGHT_CLASS_BULKY
 	randomspread = 1
 	spread = 0
-	equip_delay_self = 1.5
-	unequip_delay_self = 1.5
+	equip_delay_self = 1.5 SECONDS
+	unequip_delay_self = 1.5 SECONDS
 	inv_storage_delay = 1.5 SECONDS
 	can_parry = TRUE
 	minstr = 6
