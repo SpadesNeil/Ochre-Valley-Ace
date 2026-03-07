@@ -206,10 +206,10 @@
 			H.equip_to_slot_or_del(new /obj/item/rogueweapon/scabbard/sheath/kazengun, SLOT_BELT_R, TRUE)
 		if("Ashigaru") // Caustic Cove edit - A dishonorable weapon, only fit for a peasant! Or maybe that's just your enemies coping and seething because they're losing. :)
 			H.adjust_skillrank_up_to(/datum/skill/combat/firearms, SKILL_LEVEL_EXPERT, TRUE)
-			H.adjust_skillrank_up_to(/datum/skill/combat/knives, SKILL_LEVEL_JOURNEYMAN, TRUE)
+			H.adjust_skillrank_up_to(/datum/skill/combat/swords, SKILL_LEVEL_JOURNEYMAN, TRUE) // OV Edit, I already tried the knife and player feedback prefers the sword.
 			H.equip_to_slot_or_del(new /obj/item/rogueweapon/scabbard/gwstrap, SLOT_BACK_R, TRUE)
 			H.put_in_hands(new /obj/item/gun/ballistic/arquebus)
 			H.put_in_hands(new /obj/item/powderflask)
-			H.put_in_hands(new /obj/item/rogueweapon/huntingknife/idagger/steel/kazengun)
-			H.equip_to_slot_or_del(new /obj/item/rogueweapon/scabbard/sheath/kazengun, SLOT_BELT_R, TRUE)
+			H.put_in_hands(new /obj/item/rogueweapon/sword/short/kazengun) // OV Edit, again sword instead of knife
+			H.equip_to_slot_or_del(new /obj/item/rogueweapon/scabbard/sword/kazengun/kodachi, SLOT_BELT_R, TRUE) // OV Edit
 			H.equip_to_slot_or_del(new /obj/item/quiver/bulletpouch/iron, SLOT_BELT_L, TRUE)
