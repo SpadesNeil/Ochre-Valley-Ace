@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////////////////////////////////////////////
-// Wolf modular verb time : Added by Ochre Valley / OV									   //
+// Wolf modular verb time : Added by Ochre Valley / OV Edit								   //
 // Add your verb here and then add it to the list at werewolf.dm : var/list/werewolf_verbs //
 // Hopefully this is self explanatory of how to handle things.							   //
 /////////////////////////////////////////////////////////////////////////////////////////////
@@ -43,7 +43,7 @@
 			src.name = newname
 		to_chat(src, span_notice("Your wolf name is now [newname]."))
 		return TRUE
-	else 
+	else
 		to_chat(src, span_warning("Not allowed to rename! Currently: [W.wolfname]  If there is a mistake, ahelp and ask an admin to set your character's mind > Werewolf antag datum > 'allow_rename' var back to TRUE or 1!"))
 		return FALSE
 
