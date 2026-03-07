@@ -4,7 +4,7 @@
 	icon = 'modular_causticcove/icons/weapons/arquebus.dmi'
 	icon_state = "arquebus"
 	item_state = "arquebus"
-	dropshrink = 0.6
+	dropshrink = 0.6 // OV Edit, I think this might look nicer.
 	force = 10
 	force_wielded = 15
 	possible_item_intents = list(/datum/intent/mace/strike/wood)
@@ -216,8 +216,8 @@
 			to_chat(user, span_warning("There's already a [R.name] inside of [src]."))
 			return
 		user.stop_sound_channel(gunchannel)
-	else
-		..()
+	else // OV Edit, should hopefully fix issues with repairs.
+		..() // OV Edit
 
 /obj/item/gun/ballistic/arquebus/process_fire(atom/target, mob/living/user, message = TRUE, params = null, zone_override = "", bonus_spread = 0)
 
@@ -278,7 +278,7 @@
 	icon = 'icons/roguetown/weapons/32.dmi'
 	icon_state = "pistol"
 	item_state = "pistol"
-	dropshrink = 0.6
+	dropshrink = 0.6 // OV Edit, I think this might look nicer.
 	force = 10
 	possible_item_intents = list(/datum/intent/shoot/arquebus_pistol, /datum/intent/arc/arquebus_pistol, /datum/intent/mace/strike/wood)
 	internal_magazine = TRUE
@@ -288,8 +288,8 @@
 	randomspread = 1
 	spread = 0
 	can_parry = TRUE
-	equip_delay_self = 1.5 SECONDS
-	unequip_delay_self = 1.5 SECONDS
+	equip_delay_self = 1.5 SECONDS // OV Edit, this is supposed to denote seconds.
+	unequip_delay_self = 1.5 SECONDS // OV Edit, this is supposed to denote seconds.
 	inv_storage_delay = 2 SECONDS // OV Edit, either use a bandolier holster or deal with the slowdown.
 	minstr = 6
 	walking_stick = FALSE
@@ -432,8 +432,8 @@
 			to_chat(user, span_warning("There's already a [R.name] inside of [src]."))
 			return
 		user.stop_sound_channel(gunchannel)
-	else
-		..()
+	else // OV Edit, should hopefully fix issues with repairs.
+		..() // OV Edit
 
 
 /obj/item/gun/ballistic/arquebus_pistol/process_fire(atom/target, mob/living/user, message = TRUE, params = null, zone_override = "", bonus_spread = 0)
