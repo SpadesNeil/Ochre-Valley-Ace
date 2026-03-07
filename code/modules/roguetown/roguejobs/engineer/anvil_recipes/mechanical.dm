@@ -289,7 +289,7 @@
 	created_item = /obj/item/powderflask
 	craftdiff = 3
 
-/* // Pointless now.
+/* // OV Edit, pointless now.
 /datum/anvil_recipe/engineering/bulletpouch
 	name = "Bullet Pouch (+1 Cured Leather)"
 	req_bar = /obj/item/ingot/iron
