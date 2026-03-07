@@ -396,7 +396,7 @@
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/grenzelpants
 	shoes = /obj/item/clothing/shoes/roguetown/grenzelhoft
 	gloves = /obj/item/clothing/gloves/roguetown/angle/grenzelgloves
-	//backl = /obj/item/rogueweapon/scabbard/gwstrap // OV Edit, removal until fixed, or maybe forever
+	backl = /obj/item/rogueweapon/scabbard/gwstrap
 	backr = /obj/item/storage/backpack/rogue/satchel/black
 	backpack_contents = list(
 		/obj/item/roguekey/mercenary = 1,
