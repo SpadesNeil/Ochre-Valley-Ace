@@ -614,7 +614,7 @@
 ////////////
 
 /obj/item/quiver/sling
-	name = "bullet pouch" // OV Edit, works for all bullets.
+	name = "sling bullet pouch"
 	desc = "A pouch that can be packed with a perplexing amount of pebble-like projectiles. </br>'This pouch packs the ouch!' </br>I can quickly ready a bullet by left-clicking on the pouch with my sling."
 	icon = 'icons/roguetown/weapons/ammo.dmi'
 	icon_state = "slingpouch"
@@ -624,7 +624,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	grid_height = 64
 	grid_width = 32
-	allowed_ammo_type = list(/obj/item/ammo_casing/caseless/rogue/sling_bullet,/obj/item/ammo_casing/caseless/rogue/bullet) // OV Edit, made a list so I can use other bullets
+	allowed_ammo_type = /obj/item/ammo_casing/caseless/rogue/sling_bullet
 
 /obj/item/quiver/sling/attack_turf(turf/T, mob/living/user)
 	if(get_current_weight() >= max_storage)
