@@ -387,3 +387,16 @@
 	verbage_simple = "smooth"
 	verbage = "smooths"
 	craftdiff = 0
+
+// OV Edit, at least temporarily adds arquebus bullet pouch until I have a better solution -Ace
+/datum/crafting_recipe/roguetown/survival/arquebuspouchcraft
+	name = "arquebus bullet pouch"
+	category = "Ranged"
+	result = /obj/item/ingot/iron
+	reqs = list(
+		/obj/item/natural/fibers = 1,
+		/obj/item/natural/cloth = 1,
+		)
+	verbage_simple = "craft"
+	verbage = "crafts"
+	craftdiff = 0

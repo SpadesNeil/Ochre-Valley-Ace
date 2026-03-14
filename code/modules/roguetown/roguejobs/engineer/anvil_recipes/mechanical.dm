@@ -289,7 +289,7 @@
 	created_item = /obj/item/powderflask
 	craftdiff = 3
 
-/* // OV Edit, pointless now.
+/* // OV Edit, because the sling bullet pouch is supposed to work just fine.
 /datum/anvil_recipe/engineering/bulletpouch
 	name = "Bullet Pouch (+1 Cured Leather)"
 	req_bar = /obj/item/ingot/iron
