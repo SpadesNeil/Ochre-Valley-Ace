@@ -345,7 +345,7 @@
 	craftdiff = 1 //you should make some ammo first!
 	
 /datum/crafting_recipe/roguetown/survival/slingpouchcraft
-	name = "bullet pouch" // OV Edit
+	name = "sling bullet pouch"
 	category = "Ranged"
 	result = /obj/item/quiver/sling/
 	reqs = list(
