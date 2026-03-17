@@ -20,7 +20,7 @@
 				used = list('sound/vo/male/gen/agony (1).ogg','sound/vo/male/gen/agony (2).ogg','sound/vo/male/gen/agony (4).ogg','sound/vo/male/gen/agony (5).ogg','sound/vo/male/gen/agony (6).ogg','sound/vo/male/gen/agony (7).ogg','sound/vo/male/gen/agony (8).ogg','sound/vo/male/gen/agony (9).ogg','sound/vo/male/gen/agony (10).ogg','sound/vo/male/gen/agony (3).ogg','sound/vo/male/gen/agony (11).ogg','sound/vo/male/gen/agony (12).ogg','sound/vo/male/gen/agony (13).ogg')
 			if("breathgasp")
 				used = list('sound/vo/male/gen/breathgasp (1).ogg','sound/vo/male/gen/breathgasp (2).ogg','sound/vo/male/gen/breathgasp (3).ogg')
-			if("burp" || "belch") // OV Edit: A lot of people are used to *belch from other servers. No need to add it to the above list.
+			if("burp","belch") // OV Edit: A lot of people are used to *belch from other servers. No need to add it to the above list.
 				used = list('sound/vo/vore/burps/belch1.ogg','sound/vo/vore/burps/belch2.ogg','sound/vo/vore/burps/belch3.ogg','sound/vo/vore/burps/belch4.ogg','sound/vo/vore/burps/belch5.ogg','sound/vo/vore/burps/belch6.ogg','sound/vo/vore/burps/belch7.ogg','sound/vo/vore/burps/belch8.ogg','sound/vo/vore/burps/belch9.ogg','sound/vo/vore/burps/belch10.ogg','sound/vo/vore/burps/belch11.ogg','sound/vo/vore/burps/belch12.ogg','sound/vo/vore/burps/belch13.ogg','sound/vo/vore/burps/belch14.ogg','sound/vo/vore/burps/belch15.ogg')
 			if("choke")
 				used = 'sound/vo/male/gen/choke.ogg'
@@ -57,7 +57,7 @@
 				used = list('sound/vo/male/gen/haltyell (1).ogg','sound/vo/male/gen/haltyell (2).ogg')
 				if(prob(3))
 					used = 'sound/vo/male/gen/HEY.ogg'
-			if("hic" || "hiccup") // OV Edit, hiccups.
+			if("hic","hiccup") // OV Edit, hiccups.
 				used = list('sound/vo/vore/hiccups/hic.ogg','sound/vo/vore/hiccups/hiccup.ogg')
 			if("hmm")
 				used = 'sound/vo/male/gen/hmm.ogg'
