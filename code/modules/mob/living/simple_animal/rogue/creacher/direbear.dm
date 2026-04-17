@@ -66,6 +66,8 @@
 	can_have_ai = FALSE
 	ai_controller = /datum/ai_controller/direbear
 
+	capture_difficulty = 2 //OV ADD
+
 /mob/living/simple_animal/hostile/retaliate/rogue/direbear/get_sound(input)
 	switch(input)
 		if("aggro")
@@ -87,6 +89,7 @@
 
 /mob/living/simple_animal/hostile/retaliate/rogue/direbear/Initialize(mapload)
 	. = ..()
+	AddComponent(/datum/component/ai_aggro_system)
 	var/datum/action/cooldown/mob_cooldown/bear_swipe/swipe = new(src)
 	swipe.Grant(src)
 	ai_controller.set_blackboard_key(BB_TARGETED_ACTION, swipe)

@@ -55,6 +55,7 @@
 		/obj/item/alch/bone = 3,
 		/obj/item/alch/viscera = 2,
 	)
+	capture_difficulty = 100 //OV ADD
 
 /mob/living/simple_animal/hostile/retaliate/rogue/saiga/undead/death()
 	unbuckle_all_mobs()
@@ -71,7 +72,7 @@
 		icon_state = icon_downed
 		icon_living = icon_downed
 		adjustBruteLoss(-500)
-		stat = CONSCIOUS
+		set_stat(CONSCIOUS)
 		update_icon()
 		// If you don't kill it, it will become a threat again.
 		addtimer(CALLBACK(src, .proc/reanimation), reinimation_timer)
@@ -88,7 +89,7 @@
 		icon_living = "saiga"
 		move_to_delay = initial(move_to_delay)
 		is_downed = FALSE
-		stat = CONSCIOUS
+		set_stat(CONSCIOUS)
 		update_icon()
 
 /mob/living/simple_animal/hostile/retaliate/rogue/saiga/undead/apply_damage(damage, damagetype, def_zone, blocked, forced)

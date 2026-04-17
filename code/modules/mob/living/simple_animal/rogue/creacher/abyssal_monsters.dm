@@ -31,6 +31,7 @@
 	var/sound1 = 'sound/mobs/abyssal/abyssal_idle.ogg'
 	var/sound2 = 'sound/mobs/abyssal/abyssal_teleport.ogg'
 	var/desummon_timer = 8 SECONDS
+	capture_difficulty = 2
 
 /mob/living/simple_animal/hostile/rogue/dreamfiend/major
 	icon = 'icons/mob/abyssal_medium.dmi'
@@ -49,6 +50,8 @@
 	desummon_timer = 12 SECONDS
 
 	attack_sound = list('sound/mobs/abyssal/abyssal_attack.ogg','sound/mobs/abyssal/abyssal_attack2.ogg')
+
+	capture_difficulty = 4 //OV ADD
 
 /mob/living/simple_animal/hostile/rogue/dreamfiend/ancient
 	icon = 'icons/mob/abyssal_large.dmi'
@@ -83,12 +86,12 @@
             return pick('sound/mobs/abyssal/abyssal_idle.ogg')
 
 /mob/living/simple_animal/hostile/rogue/dreamfiend/Initialize()
-	AddElement(/datum/element/ai_retaliate)
 	ADD_TRAIT(src, TRAIT_NOBREATH, TRAIT_GENERIC)
 	ADD_TRAIT(src, TRAIT_NOPAIN, TRAIT_GENERIC)
 	ADD_TRAIT(src, TRAIT_KNEESTINGER_IMMUNITY, INNATE_TRAIT)
 	ADD_TRAIT(src, TRAIT_SILVER_WEAK, TRAIT_GENERIC) //Dreamfiends fall into the 'eldritch' category. Technically not 'unholy', but certainly monstrous.
 	. = ..()
+	AddComponent(/datum/component/ai_aggro_system)
 
 /mob/living/simple_animal/hostile/rogue/dreamfiend/ancient/Initialize()
 	ADD_TRAIT(src, TRAIT_NOMOOD, TRAIT_GENERIC)

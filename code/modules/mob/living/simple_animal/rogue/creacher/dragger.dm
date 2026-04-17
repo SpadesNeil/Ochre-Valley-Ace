@@ -46,6 +46,7 @@
 	can_have_ai = FALSE //disable native ai
 	AIStatus = AI_OFF
 	ai_controller = /datum/ai_controller/dragger
+	capture_difficulty = 2 //OV ADD
 
 /mob/living/simple_animal/hostile/rogue/dragger/electrocute_act(shock_damage, source, siemens_coeff = 1, flags = NONE)
 	return FALSE
@@ -105,6 +106,7 @@
 
 /mob/living/simple_animal/hostile/rogue/dragger/Initialize()
 	. = ..()
+	AddComponent(/datum/component/ai_aggro_system)
 	set_light(2, 2, 2, l_color = "#c0523f")
 	ADD_TRAIT(src, TRAIT_IGNOREDAMAGESLOWDOWN, TRAIT_GENERIC)
 	ADD_TRAIT(src, TRAIT_NOPAINSTUN, TRAIT_GENERIC)

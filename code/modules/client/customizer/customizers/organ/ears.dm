@@ -185,6 +185,7 @@
 		//CC End
 		//OV Add Start
 		/datum/sprite_accessory/ears/big/ochre/bunny_tall,
+		/datum/sprite_accessory/ears/big/ochre/shadekin_round,
 		//OV Add End
 		)
 
@@ -254,11 +255,13 @@
 		/datum/sprite_accessory/ears/big/sandfox_large,
 		/datum/sprite_accessory/ears/lynx,
 		/datum/sprite_accessory/ears/zorzor,
+		/datum/sprite_accessory/ears/naja_hood,
 		//CC Start
 		/datum/sprite_accessory/ears/big/caustic/bunny_large,
 		//CC End
 		//OV Add Start
 		/datum/sprite_accessory/ears/big/ochre/bunny_tall,
+		/datum/sprite_accessory/ears/big/ochre/shadekin_round,
 		//OV Add End
 	)
 
@@ -276,6 +279,7 @@
 	sprite_accessories = list(
 		/datum/sprite_accessory/ears/cobrahood,
 		/datum/sprite_accessory/ears/cobrahoodears,
+		/datum/sprite_accessory/ears/naja_hood,
 		)
 
 // ---- Tiefling
@@ -355,5 +359,6 @@
 		/datum/sprite_accessory/ears/lynx,
 		//OV Add Start
 		/datum/sprite_accessory/ears/big/ochre/bunny_tall,
+		/datum/sprite_accessory/ears/big/ochre/shadekin_round,
 		//OV Add End
 		)

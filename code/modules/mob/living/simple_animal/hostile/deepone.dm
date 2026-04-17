@@ -43,6 +43,11 @@
 
 	ai_controller = /datum/ai_controller/deepone
 
+	capture_difficulty = 2 //OV ADD
+
+/mob/living/simple_animal/hostile/rogue/deepone/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_aggro_system)
 
 /mob/living/simple_animal/hostile/rogue/deepone/arm
 	name = "Deep One"
