@@ -55,7 +55,7 @@
 		//SECURITY//
 		////////////
 	// comment out the line below when debugging locally to enable the options & messages menu
-	control_freak = 1
+	// control_freak = 1 // OV Edit: disabled control_freak
 
 		////////////////////////////////////
 		//things that require the database//
@@ -81,6 +81,8 @@
 	var/mouse_up_icon = null
 	///used to make a special mouse cursor, this one for mouse up icon
 	var/mouse_down_icon = null
+	/// world.time of last intercepted mouse-up, used to prevent double-clicks after signal intercept
+	var/click_intercept_time = 0
 
 	///Used for ip intel checking to identify evaders, disabled because of issues with traffic
 	var/ip_intel = "Disabled"
