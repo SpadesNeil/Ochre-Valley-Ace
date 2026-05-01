@@ -108,11 +108,11 @@
 /obj/item/clothing/under/roguetown/platelegs/zizo/dropped(mob/living/carbon/human/user)
 	return ..()
 
-/*/obj/item/clothing/under/roguetown/platelegs/zizo/heavy/Initialize(mapload) //OV Edit Start - Armor Remove Maint
+/obj/item/clothing/under/roguetown/platelegs/zizo/heavy/Initialize(mapload)
 	. = ..()
-	ADD_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT)
+	//ADD_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT) //OV Edit - Armor Remove Maint
 
-/obj/item/clothing/under/roguetown/platelegs/zizo/heavy/dropped(mob/living/carbon/human/user)
+/*/obj/item/clothing/under/roguetown/platelegs/zizo/heavy/dropped(mob/living/carbon/human/user)  //OV Edit Start - Armor Remove Maint
 	. = ..()
 	if(QDELETED(src))
 		return
