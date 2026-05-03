@@ -398,11 +398,11 @@
 	. = ..()
 	AddComponent(/datum/component/cursed_item, TRAIT_CABAL, "ARMOR")
 
-/*/obj/item/clothing/shoes/roguetown/boots/armor/zizo/heavy/Initialize() //OV Edit Start - Armor Remove Maint
+/obj/item/clothing/shoes/roguetown/boots/armor/zizo/heavy/Initialize()
 	. = ..()
-	ADD_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT)
+	//ADD_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT) //OV Edit - Armor Remove Maint
 
-/obj/item/clothing/shoes/roguetown/boots/armor/zizo/heavy/dropped(mob/living/carbon/human/user)
+/*/obj/item/clothing/shoes/roguetown/boots/armor/zizo/heavy/dropped(mob/living/carbon/human/user) //OV Edit Start - Armor Remove Maint
 	. = ..()
 	if(QDELETED(src))
 		return
