@@ -433,10 +433,7 @@
 	. = ..()
 	AddComponent(/datum/component/cursed_item, TRAIT_CABAL, "ARMOR")
 
-/obj/item/clothing/wrists/roguetown/bracers/zizo/heavy
-	name = "fused avantyne bracers"
-
-/*/obj/item/clothing/wrists/roguetown/bracers/zizo/heavy/Initialize() //OV Edit Start - Armor Remove Maint
+/*/obj/item/clothing/wrists/roguetown/bracers/zizo/heavy/Initialize() //OV Edit Start - Armor Removal
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT)
 
@@ -452,6 +449,10 @@
 	desc = "Oh, to plunge hands into cold water; to play a melody upon an ivory-keyed piano; to watch steam rise from boiling, twisting entrails.."
 	color = "#ddc0a7"
 	smeltresult = /obj/item/ingot/component/graggar
+
+/obj/item/clothing/wrists/roguetown/bracers/graggar/Initialize()
+	. = ..()
+	AddComponent(/datum/component/cursed_item, TRAIT_HORDE, "ARMOR", "RENDERED ASUNDER")
 
 /obj/item/clothing/wrists/roguetown/bracers/graggar/heavy
 	name = "vicious wristguards"
@@ -474,9 +475,11 @@
 		return
 	qdel(src)*/ //OV Edit End
 
+//OV Add Start - Armor Labels
 /obj/item/clothing/wrists/roguetown/bracers/graggar/Initialize()
 	. = ..()
 	AddComponent(/datum/component/cursed_item, TRAIT_HORDE, "ARMOR", "RENDERED ASUNDER")
+//OV Add End
 
 /obj/item/clothing/wrists/roguetown/bracers/hand
 	name = "hand's bracers"
