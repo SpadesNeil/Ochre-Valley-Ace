@@ -538,7 +538,7 @@
 	slot_flags = SLOT_BELT_L | SLOT_BELT_R | ITEM_SLOT_NECK | ITEM_SLOT_HIP
 	w_class = WEIGHT_CLASS_SMALL
 	grid_height = 64
-	grid_width = 32
+	grid_width = 64 // OV edit
 
 /obj/item/quiver/bulletpouch
 	name = "arquebus bullet pouch"
@@ -547,7 +547,7 @@
 	icon_state = "slingpouch"
 	item_state = "slingpouch"
 	slot_flags = ITEM_SLOT_HIP | ITEM_SLOT_NECK
-	max_storage = 20
+	max_storage = 10 // OV edit
 	w_class = WEIGHT_CLASS_NORMAL
 	grid_height = 64
 	grid_width = 32
