@@ -340,7 +340,7 @@
 	craftdiff = 2
 
 /datum/anvil_recipe/engineering/ramrod
-	name = "Replacement Firearm Ramrod"
+	name = "Firearm Ramrod" // OV Edit, name tweak
 	req_bar = /obj/item/ingot/iron
 	created_item = /obj/item/ramrod
 	createditem_num = 1
