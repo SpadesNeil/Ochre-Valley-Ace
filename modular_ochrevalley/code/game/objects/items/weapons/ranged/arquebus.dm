@@ -48,7 +48,7 @@
 	dam_icon = 'icons/effects/item_damage64.dmi'
 	icon_state = "arquebus"
 	item_state = "arquebus"
-	dropshrink = 0.6 // OV Edit, I think this might look nicer.
+	dropshrink = 0.6
 	force = 10
 	force_wielded = 15
 	possible_item_intents = list(/datum/intent/mace/strike/wood)
